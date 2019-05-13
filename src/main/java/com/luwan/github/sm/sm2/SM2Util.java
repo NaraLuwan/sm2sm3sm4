@@ -19,9 +19,9 @@ public class SM2Util {
     private static String PUBLIC_KEY;
 
     static {
-        SM2KeyVO sm2KeyVO = generateKeyPair();
-        PRIVATE_KEY = sm2KeyVO.getPriHexInSoft();
-        PUBLIC_KEY = sm2KeyVO.getPubHexInSoft();
+        SM2Key sm2Key = generateKeyPair();
+        PRIVATE_KEY = sm2Key.getPriHexInSoft();
+        PUBLIC_KEY = sm2Key.getPubHexInSoft();
     }
 
     private SM2Util() {
@@ -32,7 +32,7 @@ public class SM2Util {
      *
      * @return
      */
-    public static SM2KeyVO generateKeyPair() {
+    public static SM2Key generateKeyPair() {
         SM2 sm2 = SM2.Instance();
         AsymmetricCipherKeyPair key = null;
         while (true) {
@@ -45,10 +45,10 @@ public class SM2Util {
         ECPublicKeyParameters ecpub = (ECPublicKeyParameters) key.getPublic();
         BigInteger privateKey = ecpriv.getD();
         ECPoint publicKey = ecpub.getQ();
-        SM2KeyVO sm2KeyVO = new SM2KeyVO();
-        sm2KeyVO.setPublicKey(publicKey);
-        sm2KeyVO.setPrivateKey(privateKey);
-        return sm2KeyVO;
+        SM2Key sm2Key = new SM2Key();
+        sm2Key.setPublicKey(publicKey);
+        sm2Key.setPrivateKey(privateKey);
+        return sm2Key;
 
     }
 

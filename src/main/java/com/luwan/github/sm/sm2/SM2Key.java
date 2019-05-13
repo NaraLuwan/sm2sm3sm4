@@ -9,7 +9,7 @@ import java.math.BigInteger;
  * @author luwan
  * @date 2019/5/12
  */
-public class SM2KeyVO {
+public class SM2Key {
 
     ECPoint publicKey;
     BigInteger privateKey;

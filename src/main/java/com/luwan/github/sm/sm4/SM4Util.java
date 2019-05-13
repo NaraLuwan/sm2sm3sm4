@@ -6,8 +6,6 @@ import com.luwan.github.sm.sm.base.ErrorCode;
 import com.luwan.github.sm.sm.base.SmException;
 import org.apache.commons.codec.binary.Base64;
 
-import java.io.IOException;
-
 /**
  * @author luwan
  * @date 2019/5/12
