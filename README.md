@@ -1,4 +1,4 @@
-# SM2_SM3_SM4
+# sm2/sm3/sm4
 
 基于国密算法（SM2+SM4+SM3）实现 server - client 安全通信协议。
 
