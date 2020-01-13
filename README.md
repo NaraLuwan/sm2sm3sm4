@@ -4,9 +4,7 @@
 
 # Quick Start
 
-- Todo...
-
-> 一些注意事项（踩过的坑）
+- 详见 [SmTest](https://github.com/NaraLuwan/sm2sm3sm4/blob/master/src/test/java/com/luwan/github/sm/SmTest.java)
 
 ## SM2
 
