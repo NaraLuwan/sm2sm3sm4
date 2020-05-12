@@ -12,7 +12,10 @@ import org.apache.commons.codec.binary.Base64;
  */
 public class SM4Util {
 
-    public static String iv = "31313131313131313131313131313131";   // test 可根据需要修改
+    /**
+     * 可根据需要修改
+     */
+    public static String iv = "31313131313131313131313131313131";
 
     private SM4Util() {
     }
@@ -26,7 +29,7 @@ public class SM4Util {
      */
     public static String encryptCBC(byte[] secretKey, String decData) {
         try {
-            SM4_Context ctx = new SM4_Context();
+            SM4Context ctx = new SM4Context();
             ctx.mode = SM4.SM4_ENCRYPT;
 
             SM4 sm4 = new SM4();
@@ -49,7 +52,7 @@ public class SM4Util {
      */
     public static String decryptCBC(byte[] secretKey, String encData) {
         try {
-            SM4_Context ctx = new SM4_Context();
+            SM4Context ctx = new SM4Context();
             ctx.mode = SM4.SM4_DECRYPT;
 
             SM4 sm4 = new SM4();

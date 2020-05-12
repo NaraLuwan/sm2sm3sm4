@@ -10,9 +10,15 @@ import java.io.IOException;
  */
 public class SM4 {
 
-    public static final int SM4_ENCRYPT = 1;    // 加密
+    /**
+     * 加密
+     */
+    public static final int SM4_ENCRYPT = 1;
 
-    public static final int SM4_DECRYPT = 0;    // 解密
+    /**
+     * 解密
+     */
+    public static final int SM4_DECRYPT = 0;
 
     public static final byte[] SboxTable = {(byte) 0xd6, (byte) 0x90, (byte) 0xe9, (byte) 0xfe,
             (byte) 0xcc, (byte) 0xe1, 0x3d, (byte) 0xb7, 0x16, (byte) 0xb6,
@@ -193,7 +199,7 @@ public class SM4 {
         return ret;
     }
 
-    public void sm4_setKey_enc(SM4_Context ctx, byte[] key) throws Exception {
+    public void sm4_setKey_enc(SM4Context ctx, byte[] key) throws Exception {
         if (ctx == null) {
             throw new Exception("ctx is null!");
         }
@@ -206,7 +212,7 @@ public class SM4 {
         sm4_setkey(ctx.sk, key);
     }
 
-    public void sm4_setKey_dec(SM4_Context ctx, byte[] key) {
+    public void sm4_setKey_dec(SM4Context ctx, byte[] key) {
         if (ctx == null) {
             throw new RuntimeException("ctx is null!");
         }
@@ -231,7 +237,7 @@ public class SM4 {
      * @return
      * @throws Exception
      */
-    public byte[] sm4_crypt_cbc(SM4_Context ctx, byte[] iv, byte[] input) throws IOException {
+    public byte[] sm4_crypt_cbc(SM4Context ctx, byte[] iv, byte[] input) throws IOException {
         if (iv == null || iv.length != 16) {
             throw new RuntimeException("iv error!");
         }

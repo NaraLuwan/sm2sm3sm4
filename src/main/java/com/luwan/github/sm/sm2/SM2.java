@@ -17,7 +17,9 @@ import java.security.SecureRandom;
  */
 public class SM2 {
 
-    // 国密推荐参数
+    /**
+     * 国密推荐参数
+     */
     public static String[] ecc_param = {
             "FFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFFFFFFFFFFFFFF",
             "FFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFFFFFFFFFFFFFC",

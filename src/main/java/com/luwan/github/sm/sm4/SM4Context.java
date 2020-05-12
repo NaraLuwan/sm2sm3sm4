@@ -4,13 +4,15 @@ package com.luwan.github.sm.sm4;
  * @author luwan
  * @date 2019/5/12
  */
-public class SM4_Context {
+public class SM4Context {
     /**
      * 加密还是解密
      */
     public int mode;
 
-    // 子秘钥
+    /**
+     * 子秘钥
+     */
     public long[] sk;
 
     /**
@@ -20,7 +22,7 @@ public class SM4_Context {
      */
     public boolean isPadding;
 
-    public SM4_Context() {
+    public SM4Context() {
         this.isPadding = true;
         this.sk = new long[32];
     }
