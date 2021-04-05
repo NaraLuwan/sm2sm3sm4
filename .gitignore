@@ -24,4 +24,3 @@ nbdist/
 .nb-gradle/
 
 dependency-reduced-pom.xml
-/.idea/
