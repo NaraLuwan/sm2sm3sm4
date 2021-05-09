@@ -1,6 +1,6 @@
 # sm2/sm3/sm4
 
-基于国密算法（SM2+SM4+SM3）实现 server - client 安全通信协议。
+基于国密算法（SM2+SM3+SM4）实现的安全通信协议加解密。
 
 # Quick Start
 
