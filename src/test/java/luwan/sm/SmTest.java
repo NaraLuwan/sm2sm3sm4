@@ -1,10 +1,10 @@
-package com.luwan.github.sm;
+package luwan.sm;
 
-import com.luwan.github.sm.sm.base.BaseUtil;
-import com.luwan.github.sm.sm.base.Constant;
-import com.luwan.github.sm.sm2.SM2Util;
-import com.luwan.github.sm.sm3.SM3Util;
-import com.luwan.github.sm.sm4.SM4Util;
+import luwan.sm.base.BaseUtil;
+import luwan.sm.base.Constant;
+import luwan.sm2.SM2Util;
+import luwan.sm3.SM3Util;
+import luwan.sm4.SM4Util;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -21,22 +21,24 @@ public class SmTest {
         String encrypt = SM2Util.encrypt(ORIGIN_STR);
 
         byte[] decryptBytes = SM2Util.decrypt(encrypt);
+        assert decryptBytes != null;
         String decrypt = new String(decryptBytes, Constant.DEFAULT_CHARSET);
 
-        Assert.assertTrue(ORIGIN_STR.equals(decrypt));
+        Assert.assertEquals(ORIGIN_STR, decrypt);
     }
 
     @Test
     public void sm3() {
-        System.out.println(SM3Util.generateSM3(ORIGIN_STR));
+        Assert.assertEquals(SM3Util.generateSM3(ORIGIN_STR), SM3Util.generateSM3(ORIGIN_STR));
     }
 
     @Test
     public void sm4() {
-        byte[] secretKey = BaseUtil.hexStringToBytes("cbc2f3fbffffffffffffffff00000000");   // test key
+        // test key
+        byte[] secretKey = BaseUtil.hexStringToBytes("cbc2f3fbffffffffffffffff00000000");
         String encryptCBC = SM4Util.encryptCBC(secretKey, ORIGIN_STR);
 
         String decryptCBC = SM4Util.decryptCBC(secretKey, encryptCBC);
-        Assert.assertTrue(ORIGIN_STR.equals(decryptCBC));
+        Assert.assertEquals(ORIGIN_STR, decryptCBC);
     }
 }
