@@ -59,41 +59,35 @@ sm2sm3sm4
 └─src
     ├─main
     │  └─java
-    │      └─com
-    │          └─luwan
-    │              └─github
-    │                  └─sm
-    │                      ├─sm
-    │                      │  └─base
-    │                      │          BaseUtil.java
-    │                      │          Constant.java
-    │                      │          ErrorCode.java
-    │                      │          SmException.java
-    │                      │
-    │                      ├─sm2
-    │                      │      Cipher.java
-    │                      │      SM2.java
-    │                      │      SM2Key.java
-    │                      │      SM2Sign.java
-    │                      │      SM2SignFactory.java
-    │                      │      SM2SignResult.java
-    │                      │      SM2SignUtil.java
-    │                      │      SM2Util.java
-    │                      │
-    │                      ├─sm3
-    │                      │      SM3Util.java
-    │                      │
-    │                      └─sm4
-    │                              SM4.java
-    │                              SM4Context.java
-    │                              SM4Util.java
+    │      └─luwan
+    │          ├─sm
+    │          │  └─base
+    │          │          BaseUtil.java
+    │          │          Constant.java
+    │          │          ErrorCode.java
+    │          │          SmException.java
+    │          │
+    │          ├─sm2
+    │          │      Cipher.java
+    │          │      SM2.java
+    │          │      SM2Key.java
+    │          │      SM2Sign.java
+    │          │      SM2SignFactory.java
+    │          │      SM2SignResult.java
+    │          │      SM2SignUtil.java
+    │          │      SM2Util.java
+    │          │
+    │          ├─sm3
+    │          │      SM3Util.java
+    │          │
+    │          └─sm4
+    │                  SM4.java
+    │                  SM4Context.java
+    │                  SM4Util.java
     │
     └─test
         └─java
-            └─com
-                └─luwan
-                    └─github
-                        └─sm
-                                SmTest.java
-                                UtilsTest.java
+            └─luwan
+                └─sm
+                        SmTest.java
 ```
