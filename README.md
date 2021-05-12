@@ -49,7 +49,7 @@ SM4加解密涉及到ECB模式和CBC模式，ECB模式简单有利于计算，�
 在类SM4.java文件中padding()方法使用基于PBOC2.0的加解密数据填充规范，在数据后填充对应缺少位数个值，每个值均是该数值的hex表示，来解决分组时长度不足的问题。
 如：缺少15位则填充15位0x0f。在解密时需要根据最后一个字节去掉对应填充的数据。
 
-#### 2.4 单元测试
+#### 2.4 Quick Start
 
 - 示例代码详见： [SmTest](https://github.com/NaraLuwan/sm2sm3sm4/blob/master/src/test/java/com/luwan/github/sm/SmTest.java)
 
