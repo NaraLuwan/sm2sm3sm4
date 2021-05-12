@@ -1,4 +1,4 @@
-package com.luwan.github.sm.sm4;
+package luwan.sm4;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

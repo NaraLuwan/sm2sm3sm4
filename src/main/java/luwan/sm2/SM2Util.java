@@ -1,8 +1,8 @@
-package com.luwan.github.sm.sm2;
+package luwan.sm2;
 
-import com.luwan.github.sm.sm.base.BaseUtil;
-import com.luwan.github.sm.sm.base.ErrorCode;
-import com.luwan.github.sm.sm.base.SmException;
+import luwan.sm.base.BaseUtil;
+import luwan.sm.base.ErrorCode;
+import luwan.sm.base.SmException;
 import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
 import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
 import org.bouncycastle.crypto.params.ECPublicKeyParameters;

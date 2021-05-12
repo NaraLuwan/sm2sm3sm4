@@ -1,9 +1,9 @@
-package com.luwan.github.sm.sm4;
+package luwan.sm4;
 
-import com.luwan.github.sm.sm.base.Constant;
-import com.luwan.github.sm.sm.base.BaseUtil;
-import com.luwan.github.sm.sm.base.ErrorCode;
-import com.luwan.github.sm.sm.base.SmException;
+import luwan.sm.base.Constant;
+import luwan.sm.base.BaseUtil;
+import luwan.sm.base.ErrorCode;
+import luwan.sm.base.SmException;
 import org.apache.commons.codec.binary.Base64;
 
 /**

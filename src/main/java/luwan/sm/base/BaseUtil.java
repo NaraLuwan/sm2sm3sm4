@@ -1,4 +1,4 @@
-package com.luwan.github.sm.sm.base;
+package luwan.sm.base;
 
 import java.math.BigInteger;
 import java.nio.ByteOrder;

@@ -1,4 +1,4 @@
-package com.luwan.github.sm.sm2;
+package luwan.sm2;
 
 /**
  * SM2签名所计算的值 可以根据实际情况增加删除字段属性

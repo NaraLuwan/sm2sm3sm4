@@ -1,4 +1,4 @@
-package com.luwan.github.sm.sm2;
+package luwan.sm2;
 
 import java.math.BigInteger;
 

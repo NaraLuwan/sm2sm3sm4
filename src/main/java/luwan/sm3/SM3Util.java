@@ -1,8 +1,8 @@
-package com.luwan.github.sm.sm3;
+package luwan.sm3;
 
-import com.luwan.github.sm.sm.base.Constant;
-import com.luwan.github.sm.sm.base.ErrorCode;
-import com.luwan.github.sm.sm.base.SmException;
+import luwan.sm.base.Constant;
+import luwan.sm.base.ErrorCode;
+import luwan.sm.base.SmException;
 import org.bouncycastle.crypto.digests.SM3Digest;
 import org.bouncycastle.util.encoders.Hex;
 

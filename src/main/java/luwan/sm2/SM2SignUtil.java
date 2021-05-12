@@ -1,6 +1,6 @@
-package com.luwan.github.sm.sm2;
+package luwan.sm2;
 
-import com.luwan.github.sm.sm.base.BaseUtil;
+import luwan.sm.base.BaseUtil;
 import org.bouncycastle.asn1.*;
 import org.bouncycastle.crypto.digests.SM3Digest;
 import org.bouncycastle.math.ec.ECPoint;
