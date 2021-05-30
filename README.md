@@ -51,7 +51,7 @@ SM4加解密涉及到ECB模式和CBC模式，ECB模式简单有利于计算，�
 
 #### 2.4 Quick Start
 
-- 示例代码详见： [SmTest](https://github.com/NaraLuwan/sm2sm3sm4/blob/master/src/test/java/com/luwan/github/sm/SmTest.java)
+- 示例代码详见： [SmTest](https://github.com/NaraLuwan/sm2sm3sm4/blob/main/src/test/java/luwan/sm/SmTest.java)
 
 ## 3. 项目结构
 ```text
